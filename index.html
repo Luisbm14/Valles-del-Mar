@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Ramirez | Client Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/logo-2.jpeg" class="main-logo" alt="ARC Ramirez Logo">
+            <h1>Valles del Mar Project</h1>
+            <p class="phase">Phase: Grey Shell | July 2026</p>
+            <p class="update-date">Last updated: July 14, 2026</p>
+            
+            <div class="progress-box">
+                <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+                <span class="pct">75%</span>
+            </div>
+
+            <div class="daily-note">
+    <p><strong>Daily Update:</strong> All Door and Windows lintels have been completed as of today. Site is now prepped for the next structural phase.</p>
+</div>
+        </header>
+
+        <main class="gallery">
+            <div class="gallery-item">
+                <div class="card"><img src="assets/valles-1.jpeg" onclick="showModal(this.src)" alt="Progress"></div>
+                <p class="caption">Front elevation view</p>
+            </div>
+            <div class="gallery-item">
+                <div class="card"><img src="assets/valles-2.jpeg" onclick="showModal(this.src)" alt="Progress"></div>
+                <p class="caption">Second floor column layout</p>
+            </div>
+            <div class="gallery-item">
+                <div class="card"><img src="assets/valles-3.jpeg" onclick="showModal(this.src)" alt="Progress"></div>
+                <p class="caption">General site perspective</p>
+            </div>
+            <div class="gallery-item">
+                <div class="card"><img src="assets/valles-4.jpeg" onclick="showModal(this.src)" alt="Progress"></div>
+                <p class="caption">Structural reinforcement stage</p>
+            </div>
+        </main>
+
+        <section class="task-section">
+            <h2 class="section-title">Project Outlook</h2>
+            <div class="task-grid">
+                <div class="task-column">
+                    <h3>Completed</h3>
+                    <div class="task-item done"><span class="status-icon">✓</span><p class="task-title">Column formwork & pouring</p></div>
+                    <div class="task-item done"><span class="status-icon">✓</span><p class="task-title">Door and Windows lintels</p></div>
+                </div>
+                <div class="task-column">
+                    <h3>Pending & Next Week</h3>
+                    <div class="task-item in-progress"><span class="status-icon">▶</span><p class="task-title">2nd Floor left window framing</p></div>
+                    <div class="task-item pending"><span class="status-icon">○</span><p class="task-title">Beam reinforcement & formwork</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="financial-section">
+             <div class="payment-box">
+                <h3>Payment Status</h3>
+                <p><strong>Pending Milestone Payment</strong><br>Current phase requires payment to proceed with upcoming structural milestones.</p>
+            </div>
+        </section>
+
+        <div class="contact-footer">
+            <a href="https://wa.me/5216645066357" class="contact-btn">Contact Project Manager</a>
+        </div>
+    </div>
+
+    <div id="modal" onclick="this.style.display='none'"><img id="modal-img"></div>
+    <script>function showModal(s){document.getElementById("modal-img").src=s;document.getElementById("modal").style.display="flex";}</script>
+</body>
+</html>
